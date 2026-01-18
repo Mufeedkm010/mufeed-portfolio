@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr Robot CTF | Mufeed K M</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+<section class="section reveal">
+  <div class="container">
+
+    <h2>Mr Robot CTF</h2>
+
+    <div class="project">
+      <h3>Overview</h3>
+      <p>
+        Mr Robot is a WordPress-focused CTF simulating common real-world web exploitation scenarios. The challenge involved gaining access through web enumeration and credential abuse, establishing shell access via file upload vulnerabilities, and performing privilege escalation on a Linux system.
+      </p>
+
+      <h3>Enumeration</h3>
+      <ul class="about-list">
+        <li>Performed Nmap scanning to identify active services</li>
+        <li>Enumerated WordPress directories, plugins, and exposed files</li>
+        <li>Discovered login portal and brute-force targets</li>
+        <li>Located sensitive files revealing usernames</li>
+      </ul>
+
+      <h3>Exploitation</h3>
+      <ul class="about-list">
+        <li>Conducted credential attacks against WordPress authentication</li>
+        <li>Gained administrator dashboard access</li>
+        <li>Uploaded malicious PHP reverse shell via theme editor</li>
+        <li>Triggered payload to obtain remote shell</li>
+      </ul>
+
+      <h3>Local Enumeration</h3>
+      <ul class="about-list">
+        <li>Extracted local user credentials</li>
+        <li>Pivoted between users for higher privileges</li>
+        <li>Identified SUID binaries and misconfigurations</li>
+      </ul>
+
+      <h3>Privilege Escalation</h3>
+      <ul class="about-list">
+        <li>Exploited vulnerable SUID binary</li>
+        <li>Escalated privileges to root</li>
+        <li>Achieved full system compromise</li>
+      </ul>
+
+      <h3>Key Skills Demonstrated</h3>
+      <ul class="about-list">
+        <li>WordPress enumeration & exploitation</li>
+        <li>Credential attacks</li>
+        <li>Reverse shell deployment</li>
+        <li>Linux privilege escalation</li>
+        <li>Attack chain methodology</li>
+      </ul>
+
+      <h3>Tools Used</h3>
+      <span>Nmap • WPScan • Burp Suite • Linux • PrivEsc</span>
+
+      <div class="project-links">
+        <a href="../index.html" class="btn btn-outline">← Back to Portfolio</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script src="../script.js"></script>
+</body>
+</html>
