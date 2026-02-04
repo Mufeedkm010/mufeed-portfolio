@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chocolate Factory CTF | Mufeed K M</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+<section class="section reveal">
+  <div class="container">
+
+    <h2>Chocolate Factory CTF</h2>
+
+    <div class="project">
+      <h3>Overview</h3>
+      <p>
+        The Chocolate Factory machine is a web-based vulnerable target designed to simulate a real-world attack chain starting from web exploitation and ending with full system compromise. The objective was to identify weaknesses in exposed services, exploit insecure functionality to obtain shell access, and escalate privileges through Linux misconfigurations.
+      </p>
+
+      <h3>Enumeration & Recon</h3>
+      <ul class="about-list">
+        <li>Conducted network scanning to identify open services and exposed web ports</li>
+        <li>Discovered hidden directories and endpoints through brute-force enumeration</li>
+        <li>Identified vulnerable parameters within web functionality</li>
+        <li>Mapped application behavior to locate potential injection points</li>
+      </ul>
+
+      <h3>Initial Exploitation</h3>
+      <ul class="about-list">
+        <li>Exploited unsanitized user input leading to command execution</li>
+        <li>Crafted payloads to establish reverse shell access</li>
+        <li>Successfully obtained low-privileged access to the target Linux environment</li>
+      </ul>
+
+      <h3>Post-Exploitation</h3>
+      <ul class="about-list">
+        <li>Performed manual Linux enumeration for privilege escalation vectors</li>
+        <li>Identified sensitive files and configuration weaknesses</li>
+        <li>Discovered insecure permissions and exploitable local paths</li>
+      </ul>
+
+      <h3>Privilege Escalation</h3>
+      <ul class="about-list">
+        <li>Leveraged misconfigured binaries and permission flaws</li>
+        <li>Escalated privileges from limited shell to root user</li>
+        <li>Achieved full administrative control over the system</li>
+      </ul>
+
+      <h3>Key Skills Demonstrated</h3>
+      <ul class="about-list">
+        <li>Web vulnerability discovery</li>
+        <li>Reverse shell handling</li>
+        <li>Linux enumeration techniques</li>
+        <li>Privilege escalation methodology</li>
+        <li>Structured reporting & analysis</li>
+      </ul>
+
+      <h3>Tools Used</h3>
+      <span>Nmap • Burp Suite • Gobuster • Linux • Reverse Shells</span>
+
+      <div class="project-links">
+        <a href="Chocolate_Factory_TryHackMe_Report.pdf" target="_blank" class="btn btn-outline">View Report</a>
+        <a href="../index.html" class="btn btn-outline">← Back to Portfolio</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script src="../script.js"></script>
+</body>
+</html>
