@@ -429,6 +429,7 @@ h2 {
   inset: 0;
   border-radius: 12px;
   opacity: 0;
+  pointer-events: none;  /* 🔥 THIS FIXES YOUR BUTTONS */
   background: linear-gradient(
     120deg,
     transparent 30%,
@@ -622,6 +623,28 @@ html {
   }
 }
 
+/* =====================
+   PROJECT SCREENSHOTS
+===================== */
 
+.project-images {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.project-images img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 229, 255, 0.25);
+}
 
 
